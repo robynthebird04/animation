@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style> 
+
+div {
+  width: 800 px;
+  height: 80px;
+  background-color: red;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s;
+  animation-fill-mode: forwards;
+}
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+#mainDiv {
+font-size: 100px
+}
+#one div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation: myfirst 5s linear 2s infinite alternate;
+}
+
+@keyframes myfirst {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:300px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+</style> 
+</head>
+
+<body>
+        <div id="mainDiv"> Animation is Cool! </div> 
+        <br />
+    <div id="one"></div>
+    </body>
+</html>
